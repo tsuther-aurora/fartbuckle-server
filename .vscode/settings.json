@@ -1,0 +1,13 @@
+{
+  // .vscode/settings.json
+  "eslint.nodePath": ".yarn/sdks",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  }
+  // If using Prettier + ESLint
+  // "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  ,
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}

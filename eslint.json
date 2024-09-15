@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "node_modules/.*",
+    "*.mjs"
+  ],
+  "overrides": [
+    {
+      "files": ["app/**/*.ts", "app/*.ts"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:unicorn/recommended"
+      ],
+      "plugins": ["align-import", "unicorn"],
+      "rules": {
+        "brace-style": ["error", "allman"],
+        "array-bracket-spacing": ["error", "always"],
+        "multiline-ternary": ["error", "never"],
+        "indent": ["error" , 2],
+        "object-curly-spacing": ["error" , "always"],
+        "key-spacing": ["error", { "align": "value" }],
+        "align-import/align-import": [1],
+        "unicorn/no-null": ["off"],
+        "unicorn/prevent-abbreviations": ["off"],
+        "unicorn/prefer-event-target": ["off"],
+        "unicorn/no-nested-ternary": ["off"]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

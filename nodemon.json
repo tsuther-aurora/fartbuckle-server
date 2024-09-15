@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "app/*.ts",
+    "app/routes/*.ts",
+    "app/_internal/*.ts",
+    "app/helpers/*.ts",
+    "app/sheetupload/*.ts"
+  ],
+  "ext": "ts, json",
+  "exec": "tsx --trace-warnings ./app/server.ts"
+}
